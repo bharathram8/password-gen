@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWD GEN</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="genni">
+        <div class="titled">
+            <h1 class="Mi_title">  PaSswoRD  GenEraTOr</h1> 
+            <h2 class="Mi">Enter the length of your password</h2>
+        </div>
+        <div class="lendiv">
+            <div class="ldiv">
+                <input type="numbers"  class="length" id="lennum">
+                
+            </div>
+           
+            </div>
+        </div>
+        <div class="gendivision">
+            <button onclick="createpwd()">Generate Password</button>
+            <input type="text" id="pwd" readonly>
+            <button onclick="encryptaesPassword()">Encrypt aes Password</button>
+            <input type="text" id="encryptedaesPassword" readonly>
+            <button onclick="encryptdesPassword()">Encrypt des Password</button>
+            <input type="text" id="encrypteddesPassword" readonly>
+            <button onclick="encryptrabbitPassword()">Encrypt rabbit Password</button>
+            <input type="text" id="encryptedrabbitPassword" readonly>
+            <button onclick="encryptcaesarPassword()">Encrypt caesar Password</button>
+            <input type="text" id="encryptedcaesarPassword" readonly>
+
+        </div>
+    </div>
+
+    <script src="script bharath.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+</body>
+
+</html>
